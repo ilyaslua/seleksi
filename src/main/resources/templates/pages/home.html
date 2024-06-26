@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout/master}">
+<th:block layout:fragment="page_css">
+    <link rel="stylesheet" th:href="@{/assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</th:block>
+
+<th:block layout:fragment="content">
+    <!--start page wrapper -->
+    <div class="page-wrapper">
+        <div class="page-content">
+            <div class="card">
+                <div class="card-body">
+                    Halaman
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+    <!--end page wrapper -->
+</th:block>
+<th:block layout:fragment="page_js">
+    <script th:src="@{/assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js}"></script>
+    <script th:src="@{/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js}"></script>
+</th:block>
